@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+
+  <title>Meat</title>
+
+  <link href="" rel="shortcut icon" type="image/x-icon" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="expires" content="wed, 30 jul 2014 14:30:00 GMT">
+
+  <meta property="og:site_name" content=""/>
+  <meta property="og:title" content=""/>
+  <meta property="og:description" content=""/>
+  <meta property="og:url" content="" />
+  <meta property="og:image" content=""/> 
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/styles.css">  
+  
+
+  <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+
+<main>
+  
+  <!-- Formulario de Ingreso de datos -->
+
+  <section id="formulario" class="container"> 
+    <article class="row">
+      <div class="col-xs-12">
+        <form method="post" name="form_cheque" id="form_cheque">
+          <label for="nombre">Nombre Destinatario</label>
+          <input type="text" name="nombre" value="" placeholder="">
+          <label for="monto">Monto ($)</label>
+          <input type="text" name="monto" value="" placeholder="Ej: 300000" onkeyup="format(this)" onchange="format(this)">
+          <label for="fecha">Fecha</label>
+          <input type="text" name="fecha" value="" placeholder="">
+          <div class="submit-btn">Generar</div>
+          <p><small>* Todos los campos son obligatorios</small></p>
+        </form>
+      </div>
+    </article>
+  </section>
+  
+
+  <!-- Cheque Generado -->
+
+  <section id="cheque" class="container">
+    <article class="row">
+      <div class="col-xs-12">
+        <div class="check">
+          <p class="monto"></p>
+          <p class="destinatario"></p>
+          <p class="cifra"></p>
+          <p class="fecha"></p>
+        </dick>
+      </div>
+    </article>
+  </section>
+
+</main>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/convertidor.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

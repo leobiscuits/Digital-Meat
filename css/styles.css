@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+html,body{
+	min-width: 320px;
+	width:100%;
+	min-height: 100%;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+}
+
+main{
+	position: relative;
+	display: block;
+	min-width: 320px;
+	height: auto!important;
+	display: block;
+	overflow: auto;
+	overflow-x: hidden;
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #ffffff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #eeeeee 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	-webkit-font-smoothing: antialiased;
+	z-index: 1;
+}
+
+button:focus, input:focus, textarea:focus, select:focus{
+	outline: none;
+}
+a:hover, a:focus{
+	text-decoration: none;
+}
+
+section{
+	position: relative;
+	display: block;
+	height: 100%;
+	overflow: hidden;
+}
+
+form{
+	position: relative;
+	display: block;
+	margin: 40px auto 0px auto;
+	width: 90%;
+	max-width: 350px;
+}
+label{
+	position: relative;
+	display: block;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 0px;
+	color: #333;
+	text-shadow: 0px 1px 0px #fff;
+	margin: 0px 0px 5px 0px;
+}
+input{
+	position: relative;
+	display: block;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 40px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	background-color: #fff;
+	border: 0px;
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	line-height: 40px;
+	text-indent: 10px;
+	letter-spacing: 1px;
+	transition: all 0.1s ease;
+}
+.submit-btn{
+	position: relative;
+	display: block;
+	margin: 40px auto 0px auto;
+	width: 100%;
+	max-width: 350px;
+	height: 40px;
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 40px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	cursor: pointer;
+	background-color: #e74c3c;
+	border-bottom: 4px solid #c0392b;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	transition: all 0.4s ease;
+}
+.submit-btn:hover{
+	background-color: #f06557;
+}
+input.error{
+	background-color: #eee;
+	border: 2px solid #e74c3c;
+}
+p small{
+	position: relative;
+	display: block;
+	margin-top: 10px;
+}
+
+#cheque{
+	display: none;
+}
+.col-xs-12{
+	position: relative;
+	display: block;
+}
+.check{
+	position: relative;
+	display: block;
+	margin: 40px auto 0px auto;
+	width: 100%;
+	height: auto;
+	background-color: #2ecc71;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border: 10px solid rgba(255,255,255,.7);
+	padding: 25px 0px 25px 0px;
+}
+.check p{
+	position: relative;
+	display: block;
+	clear: both;
+	margin: auto;
+	width: 80%;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+.check .destinatario, .check .cifra{
+	border-radius: 0px;
+	text-shadow: 1px 1px 0px rgba(255,255,255,.3);
+	border-bottom: 2px solid rgba(255,255,255,.2);
+}
+.check .monto, .check .fecha{
+	background-color: rgba(255,255,255,.2);
+	text-align: center;
+}
+p.fecha{
+	margin-top: 25px;
+}
+.check .cifra{
+	font-size: 10px;
+}
+@media screen and (min-width: 768px){
+	form{
+		top: 50%;
+		margin-top: -168px;
+		height: 336px;
+	}
+	.check{
+		top: 50%;
+		margin-top: -175px;
+		max-width: 700px;
+		height: 350px;
+		padding: 0px;
+	}
+	p.monto{
+		position: relative;
+		display: block;
+		clear: both;
+		margin: 3.5% 5% 25px 0px;
+		float: right;
+		width: 250px;
+		text-align: center;
+	}
+	.check .cifra{
+		font-size: 14px;
+	}
+	p.fecha{
+		position: relative;
+		display: block;
+		clear: both;
+		margin: 0% 5% 0px 0px;
+		float: right;
+		width: 250px;
+		text-align: center;
+	}
+	p.destinatario, p.cifra{
+		position: relative;
+		display: block;
+		margin: 0px auto 25px auto;
+		width: 90%;
+		text-indent: 20px;
+	}
+}
